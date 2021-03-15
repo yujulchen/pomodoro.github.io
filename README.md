@@ -1,5 +1,5 @@
 # pomodoro
 使用react製作todolist與番茄鐘
-https://github.com/yujulchen/pomodoro.github.io
+http://yujulchen.github.io/pomodoro
 
 # 設計稿
