@@ -93,7 +93,7 @@
 }
 
 .timeBox {
-    font-size: 10em;
+    font-size: 850%;
     font-weight: 700;
     color: #ffffff;
     text-shadow: 0 3px 3px #888888;
@@ -104,7 +104,7 @@
 
 .iconBox {
     width: 70%;
-    height: 25.5%;
+    // height: 25.5%;
     display: flex;
     padding-left: 17%;
     padding-top: 1.5%;
@@ -112,22 +112,37 @@
         width: 12%;
         margin-right: 12%;
         padding-top: 7%;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .play {
         width: 25%;
         margin-right: 12%;
         margin-left: 12%;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .change {
         width: 12%;
         margin-left: 12%;
         padding-top: 7%;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
-.music {
-    width: 12%;
+.musicBox {
     padding-left: 44%;
+    padding-top: 10%;
+    .music {
+        width: 17%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
