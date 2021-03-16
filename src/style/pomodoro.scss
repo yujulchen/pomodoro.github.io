@@ -80,7 +80,54 @@
 .clock {
     margin-top: 4%;
     margin-left: 5%;
-    margin-right: 6rem;
     width: 40%;
-    background: blue;
+    position: relative;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    z-index: -1;
+}
+
+.timeBox {
+    font-size: 10em;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 3px 3px #888888;
+    text-align: center;
+    line-height: 2em;
+    padding-top: 5%;
+}
+
+.iconBox {
+    width: 70%;
+    height: 25.5%;
+    display: flex;
+    padding-left: 17%;
+    padding-top: 1.5%;
+    .stop {
+        width: 12%;
+        margin-right: 12%;
+        padding-top: 7%;
+    }
+
+    .play {
+        width: 25%;
+        margin-right: 12%;
+        margin-left: 12%;
+    }
+
+    .change {
+        width: 12%;
+        margin-left: 12%;
+        padding-top: 7%;
+    }
+}
+
+.music {
+    width: 12%;
+    padding-left: 44%;
 }
