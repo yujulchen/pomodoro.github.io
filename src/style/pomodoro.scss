@@ -24,9 +24,11 @@
     }
 }
 
+// TodoList
 .todoList {
     margin-top: 2.5rem;
     height: 70%;
+    overflow-y: hidden;
 }
 
 .paper {
@@ -42,7 +44,7 @@
     height: 22.8%;
     box-shadow: 0 3px 3px #0000003d;
     display: flex;
-    input {
+    #add {
         margin-left: 48px;
         border: none;
         background-color: #ffdb93;
@@ -67,16 +69,49 @@
     height: 77.2%;
     background-color: #ffffff;
     border-radius: 0 0 1rem 1rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
     ul {
         margin: 0;
         padding: 6% 13% 0 13%;
     }
-    li {
-        padding-bottom: 2.25rem;
-        font-size: 2rem;
+
+    .listBox {
+        width: 100%;
+        display: flex;
+        label {
+            cursor: pointer;
+            li {
+                padding-bottom: 2.25rem;
+                font-size: 2rem;
+                position: relative;
+                .check {
+                    display: none;
+                }
+            }
+        }
+
+        .liIconBox {
+            width: 100%;
+            display: flex;
+            .edit {
+                padding-left: 4%;
+                padding-top: 2%;
+                width: 5%;
+            }
+            .delete {
+                padding-left: 4%;
+                padding-top: 2%;
+                width: 5%;
+            }
+        }
     }
 }
 
+// clock
 .clock {
     margin-top: 4%;
     margin-left: 5%;
