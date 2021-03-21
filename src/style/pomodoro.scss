@@ -1,3 +1,11 @@
+.desk {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 .bg {
     width: 100vw;
     height: 100vh;
@@ -195,6 +203,7 @@
 }
 
 .circle {
+    display: block;
     position: absolute;
     top: 2%;
     width: 100%;
@@ -207,8 +216,8 @@
     color: #ffffff;
     text-shadow: 0 3px 3px #888888;
     text-align: center;
-    line-height: 2em;
-    padding-top: 5%;
+    padding-top: calc(100vh / 9);
+    padding-bottom: 6%;
 }
 
 .iconBox {
@@ -252,6 +261,269 @@
         width: 17%;
         &:hover {
             cursor: pointer;
+        }
+    }
+}
+
+// media
+@media (min-width: 2000px) {
+    .circle {
+        top: -4%;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .timeBox {
+        padding-top: calc(100vh / 9);
+    }
+}
+
+@media (min-width: 1200px) {
+    .circle {
+        top: calc(100vh / 2000);
+    }
+
+    .timeBox {
+        padding-top: calc(100vh / 12);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .bg {
+        display: block;
+        width: 100vw;
+        height: 155vh;
+        margin: 0;
+    }
+
+    .innerBox {
+        margin: 0;
+        height: 65vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 100%;
+        padding-left: 0;
+    }
+
+    .clock {
+        display: none;
+    }
+
+    .clock-m {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .circle-m {
+        display: block;
+        margin-left: 24%;
+        width: 53%;
+        border-radius: 50%;
+        box-shadow: 0 6px 6px #6a6a6a;
+        background: linear-gradient(to bottom, #1e9600 0%, #a3a50f 15%, #f5af19 32%, #f47b16 58%, #f12711 100%);
+    }
+
+    .timeBox {
+        font-size: 600%;
+        padding-top: 6%;
+    }
+
+    .iconBox {
+        width: 40%;
+        padding-left: 32%;
+    }
+
+    .musicBox {
+        padding-left: 48%;
+        padding-top: 6%;
+        width: 38%;
+    }
+
+    .todoList {
+        padding: 8% 5%;
+        height: 45%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767.99999px) {
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .bg {
+        display: block;
+        width: 100vw;
+        height: 155vh;
+        margin: 0;
+    }
+
+    .innerBox {
+        margin: 0;
+        height: 65vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 80%;
+        padding-left: 0;
+    }
+
+    .clock {
+        display: none;
+    }
+
+    .clock-m {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .circle-m {
+        display: block;
+        margin-left: 13%;
+        width: 75%;
+        border-radius: 50%;
+        box-shadow: 0 6px 6px #6a6a6a;
+        background: linear-gradient(to bottom, #1e9600 0%, #a3a50f 15%, #f5af19 32%, #f47b16 58%, #f12711 100%);
+    }
+
+    .timeBox {
+        padding-top: 10%;
+        font-size: 500%;
+        padding-top: 15%;
+    }
+
+    .iconBox {
+        width: 40%;
+        padding-left: 32%;
+    }
+
+    .musicBox {
+        padding-left: 48%;
+        padding-top: 6%;
+        width: 38%;
+    }
+
+    .todoList {
+        padding: 5% 5%;
+        height: 45%;
+    }
+}
+
+@media (max-width: 576.99999px) {
+    .desk {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .bg {
+        display: block;
+        width: 100vw;
+        height: 115vh;
+        margin: 0;
+    }
+
+    .innerBox {
+        margin: 0;
+        height: 52vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 70%;
+        padding-left: 0;
+    }
+
+    .clock {
+        display: none;
+    }
+
+    .clock-m {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .circle-m {
+        display: block;
+        margin-left: 13%;
+        width: 75%;
+        border-radius: 50%;
+        box-shadow: 0 6px 6px #6a6a6a;
+        background: linear-gradient(to bottom, #1e9600 0%, #a3a50f 15%, #f5af19 32%, #f47b16 58%, #f12711 100%);
+    }
+
+    .timeBox {
+        padding-top: 10%;
+        font-size: 500%;
+        padding-top: 15%;
+    }
+
+    .iconBox {
+        width: 40%;
+        padding-left: 32%;
+    }
+
+    .musicBox {
+        padding-left: 48%;
+        padding-top: 6%;
+        width: 38%;
+    }
+
+    .todoList {
+        height: 45%;
+        padding: 0 5%;
+    }
+
+    .addNewTodo {
+        height: 16.8%;
+        .plus {
+            .plusIn {
+                padding-top: calc(100vh / 24.5);
+            }
         }
     }
 }

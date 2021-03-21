@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 
+// css
+import "../style/pomodoro.scss";
+
 // svg components
 import ClockCircle from "./svg/ClockCircle";
 import Stop from "./svg/Stop";
@@ -136,7 +139,7 @@ function Clock() {
           <Mute />
         </div>
       </div>
-      <div className="circle">
+      <div className="circle circle-m">
         <ClockCircle />
       </div>
     </>
